@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Технологии{% endblock %}
+{% block content %}
+<div class="row">
+  <h1>Используемый стек технологий</h1>
+  <aside class="col-12 col-md-3">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <img src="{% static 'img/about/python-logo.png' %}" height="60" class="rounded mx-auto d-block" alt="">
+      </li>
+      <li class="list-group-item">
+        <img src="{% static 'img/about/django-logo.png' %}" height="60" class="rounded mx-auto d-block" alt="">
+      </li>
+      <li class="list-group-item">
+        <img src="{% static 'img/about/bootstrap-logo.svg' %}" height="60" class="rounded mx-auto d-block" alt="">
+      </li>
+      <li class="list-group-item">
+        <img src="{% static 'img/about/HTML5-logo.png' %}" height="70" class="rounded mx-auto d-block" alt="">
+      </li>
+    </ul>
+  </aside>
+  <article class="col-12 col-md-9">
+    <p>Данный проект является частью программы "Backend-разработка на языке Python" от Яндекс.Практикум</p>
+  </article>
+</div>
+{% endblock %}
